@@ -1,6 +1,6 @@
-{{AppVeyor build status badge for master branch}}
+[![Build status](https://ci.appveyor.com/api/projects/status/5f5k4aox5g12v93i/branch/master?svg=true)](https://ci.appveyor.com/project/PowerShell/xscdpm/branch/master)
 
-#{{ModuleName}}
+# xSCDPM
 
 {{Description}}
 
