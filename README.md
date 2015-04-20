@@ -2,7 +2,7 @@
 
 # xSCDPM
 
-The **xSCDPM** contain the **xSCDPMServerSetup**, **xSCDPMDatabaseServerSetup**, and **xSCDPMConsole** DSC resources for installing System Center Service Management Automation (DPM). 
+The **xSCDPM** modules contains the **xSCDPMServerSetup**, **xSCDPMDatabaseServerSetup**, and **xSCDPMConsole** DSC resources for installing System Center Service Management Automation (DPM). 
 
 
 ## Contributing
