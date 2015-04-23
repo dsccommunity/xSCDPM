@@ -16,4 +16,3 @@ class MSFT_xSCDPMServerSetup : OMI_BaseResource
     [Required, Description("SQL instance for reporting.")] String ReportingInstanceName;
     [Required, EmbeddedInstance("MSFT_Credential"), Description("Credential to be used to access SQL reporting for DPM at installation time.")] String ReportingMachineCredential;
 };
-
