@@ -50,8 +50,8 @@ Please check out common DSC Resources [contributing guidelines](https://github.c
 ### xSCDPMAgent
 
 * **Ensure**: (Key) Ensures that the DPM Agent is **Present** or **Absent**on the machine.
-* **SCDPMServer;**: (Key) Name of the DPM Server that this agent will be attached to.
-* **SetupCredential;**: (Required) Credential with administrator access to Data Protection Manager and the computer for the Data Protection Manager agent.
+* **SCDPMServer**: (Key) Name of the DPM Server that this agent will be attached to.
+* **SetupCredential**: (Required) Credential with administrator access to Data Protection Manager and the computer for the Data Protection Manager agent.
 
 
 ## Versions
