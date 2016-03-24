@@ -14,6 +14,7 @@ Please check out common DSC Resources [contributing guidelines](https://github.c
 * **xSCDPMServerSetup** manages installation of the DPM server.
 * **xSCDPMDatabaseServerSetup** manages installation of the DPM support files for SQL Server.
 * **xSCDPMConsole** manages installation of the DPM console.
+* **xSCDPMAgent** manages installation of the DPM Agent
 
 ### xSCDPMServerSetup*
 
@@ -46,10 +47,18 @@ Please check out common DSC Resources [contributing guidelines](https://github.c
 * **SourceFolder**: Folder within the source path containing the source files for installation.
 * **SetupCredential**: (Required) Credential to be used to perform the installation.
 
+### xSCDPMAgent
+
+* **Ensure**: (Key) Ensures that the DPM Agent is **Present** or **Absent**on the machine.
+* **SCDPMServer;**: (Key) Name of the DPM Server that this agent will be attached to.
+* **SetupCredential;**: (Required) Credential with administrator access to Data Protection Manager and the computer for the Data Protection Manager agent.
+
 
 ## Versions
 
 ### Unreleased
+
+* Added xSCDPMAgent to manage the DPM Agent
 
 ### 1.2.0.0
 
