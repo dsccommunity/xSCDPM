@@ -14,7 +14,7 @@ Please check out common DSC Resources [contributing guidelines](https://github.c
 * **xSCDPMServerSetup** manages installation of the DPM server.
 * **xSCDPMDatabaseServerSetup** manages installation of the DPM support files for SQL Server.
 * **xSCDPMConsole** manages installation of the DPM console.
-* **xSCDPMAgent** manages installation of the DPM Agent
+* **xSCDPMAgent** manages a DPM Agent's server attachment.
 
 ### xSCDPMServerSetup*
 
