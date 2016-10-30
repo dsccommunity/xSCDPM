@@ -17,6 +17,7 @@ Please check out common DSC Resources [contributing guidelines](https://github.c
 * **xSCDPMServerSetup** manages installation of the DPM server.
 * **xSCDPMDatabaseServerSetup** manages installation of the DPM support files for SQL Server.
 * **xSCDPMConsole** manages installation of the DPM console.
+* **xSCDPMAgentSetup** manages setup of the DPM Agent.
 
 ### xSCDPMServerSetup*
 
@@ -49,11 +50,22 @@ Please check out common DSC Resources [contributing guidelines](https://github.c
 * **SourceFolder**: Folder within the source path containing the source files for installation.
 * **SetupCredential**: (Required) Credential to be used to perform the installation.
 
+### xSCDPMAgentSetup
+
+* **Ensure**: (Key) An enumerated value that describes if the DPM agent is expected to be installed on the machine.Can be **Present** or **Absent**.
+* **SourcePath**: UNC path to the root of the source files for installation.
+* **SourceFolder**: Folder within the source path containing the source files for installation.
+* **SetupCredential**: (Required)Credential to be used to perform the installation.
+* **SourceCredential**: Credential to be used to access SourcePath.
+* **SuppressReboot**: Suppress reboot.
+* **ForceReboot**: Force reboot.
 
 ## Versions
 
 ### Unreleased
 * Converted appveyor.yml to install Pester from PSGallery instead of from Chocolatey.
+
+* Added new resource xSCDPMAgentSetup.
 
 ### 1.2.0.0
 
