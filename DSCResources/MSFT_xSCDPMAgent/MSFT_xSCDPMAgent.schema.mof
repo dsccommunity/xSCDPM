@@ -1,0 +1,7 @@
+[ClassVersion("1.0.0.0"), FriendlyName("xSCDPMAgent")]
+class MSFT_xSCDPMAgent : OMI_BaseResource
+{
+    [Key, Description("An enumerated value that describes if the DPM agent is expected to be installed on the machine.\nPresent {default}  \nAbsent   \n"), ValueMap{"Present","Absent"}, Values{"Present","Absent"}] String Ensure;
+    [Key, Description("Name of the DPM Server that this agent will be attached to.")] String SCDPMServer;
+    [Required, EmbeddedInstance("MSFT_Credential"), Description("Credential with administrator access to Data Protection Manager and the computer for the Data Protection Manager Manager agent.")] String SetupCredential;
+};
