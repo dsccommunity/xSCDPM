@@ -2,7 +2,7 @@
 
 # xSCDPM
 
-The **xSCDPM** modules contains the **xSCDPMServerSetup**, **xSCDPMDatabaseServerSetup**, and **xSCDPMConsole** DSC resources for installing System Center Service Management Automation (DPM). 
+The **xSCDPM** modules contains the **xSCDPMServerSetup**, **xSCDPMDatabaseServerSetup**, and **xSCDPMConsole** DSC resources for installing System Center Service Management Automation (DPM).
 
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
@@ -53,7 +53,10 @@ Please check out common DSC Resources [contributing guidelines](https://github.c
 ## Versions
 
 ### Unreleased
-* Converted appveyor.yml to install Pester from PSGallery instead of from Chocolatey.
+
+* Update appveyor.yml to use the default template.
+* Added default template files .codecov.yml, .gitattributes, and .gitignore, and
+  .vscode folder.
 
 ### 1.2.0.0
 
@@ -61,7 +64,7 @@ Please check out common DSC Resources [contributing guidelines](https://github.c
 
 ### 1.1.0.0
 
-* Initial release with the following resources 
+* Initial release with the following resources
     * xSCDPMServerSetup
     * xSCDPMDatabaseServerSetup
     * xSCDPMConsole
@@ -71,7 +74,7 @@ Please check out common DSC Resources [contributing guidelines](https://github.c
 All three of the following examples also require the **xDismFeature** and **xSQLServer** modules.
 All three examples also use the exact same Configuration and just modify the behavior based on input ConfigurationData
 
-Note: These examples require the use of PowerShell 5.0, included as part of [Windows Management Framework (WMF) 5.0](http://go.microsoft.com/fwlink/?LinkId=398175). 
+Note: These examples require the use of PowerShell 5.0, included as part of [Windows Management Framework (WMF) 5.0](http://go.microsoft.com/fwlink/?LinkId=398175).
 
 Note: In the Examples folder you will see a version of each file with "-TP" appended to the name.
 These are the equivalent examples for deployment of System Center Technical Preview on Windows Server Technical Preview.
@@ -84,6 +87,6 @@ SCDPM-SingleServer.ps1 installs DPM including prerequisites and SQL on a single 
 
 SCDPM-SeperateSQL.ps1 installs DPM and SQL on separate servers.
 
-### Multiple Instances 
+### Multiple Instances
 
 SCDPM-MultiInstance.ps1 installs multiple instances of DPM on different servers all using a single SQL on another server.
